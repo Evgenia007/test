@@ -1,0 +1,39 @@
+Команды git
+
+$ ssh-key fen -t rsa -C "mail@webpp.ru" Создаем ключ, все по умолчанию
+$ cat .ssh/id_rsa.pub Копируем публичный ключ и добавляем в аккаунт
+$ git config —global user.name "John Doe"
+$ git config —global user.email johndoe@example.com
+
+$ git branch имя Новая ветка
+$ git checkout testing Перейти на ветку
+$ git checkout -b Создать и перейти
+$ git checkout master $ git merge hotfix Перейти в мастер и слить
+$ git branch -d hotfix Удалить ветку
+
+
+
+$ cat .gitignore Добавление не отслеживаемых файлов
+$ git diff Изменения
+$ git rm Удалить файл из отслеживаемых
+$ git rm —cached readme.txt Удалить добавленный
+$ git log Список комитов
+$ git commit —amend Изменение последнего комита
+$ git reset HEAD benchmarks.rb Убрать из индекса после add
+$ git checkout — benchmarks.rb Убрать все изменения из файла
+$ git remote -v Url
+$ git remote add [сокращение] [url]
+$ git push [удал. сервер] [ветка]
+$ git remote show [удал. сервер] [ветка]
+$ git remote rename pb paul Переименовать репозиторий
+$ git remote rm paul Удалить репозиторий
+
+
+
+$ git config —global core.editor emacs vim Редактор
+$ git config —list Проверка настроек
+$ git init Создание репозитория
+$ git add -A
+$ git commit -m 'initial project version'
+$ git clone git://github.com/schacon/grit.git
+$ git status
